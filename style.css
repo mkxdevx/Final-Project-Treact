@@ -16,15 +16,34 @@ img {
     width: 100%;
 }
 
+.purple {
+    color: #6415ff;
+}
+
 .row {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
 #landing {
+    height: 100vh;
+    width: 100vw;
     padding: 0 32px;
 }
+
+/* 
+
+NAV
+
+*/
 
 nav {
     padding-top: 32px;
@@ -88,3 +107,112 @@ nav {
 .nav__link:hover:after {
     opacity: 1;
 }
+
+/* 
+
+LANDING 
+
+*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__description {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__description--title {
+    width: 100%;
+    font-size: 32px;
+    color: #1a202c;
+}
+
+.header__description--para {
+    width: 100%;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.header__email {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__email--input {
+    position: absolute;
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(229, 231, 235);
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 600;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.header__email--input::placeholder {
+    color: rgb(158, 170, 189);
+    font-weight: 500;
+}
+
+.header__btn {
+    background-color: #6415ff;
+    color: #fff;
+    width: 100%;
+    max-width: 160px;
+    height: calc(100% - 16px);
+    margin: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    z-index: 2;
+}
+
+.header__customers {
+    width: 100%;
+}
+
+.header__customers {
+    width: 100%;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__customers--title {
+    color: rgb(158, 170, 189);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.header__customers--img {
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.header__img--wrapper {
+    width: calc(100% - 40%);
+    margin-top: 60px;
+}
+
+.header__img {
+    width: 100%;
+}
+
