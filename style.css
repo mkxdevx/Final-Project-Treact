@@ -20,6 +20,18 @@ img {
     color: #6415ff;
 }
 
+.btn {
+    max-width: 160px;
+    background-color: #6415ff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 32px;
+    margin-top: 32px;
+}
+
 .row {
     width: 100%;
     max-width: 1280px;
@@ -34,6 +46,7 @@ img {
 }
 
 .section__label {
+    margin-bottom: 16px;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -48,12 +61,19 @@ img {
 
 .section__para {
     max-width: 550px;
-    text-align: center;
     color: #7c8ba1;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.5;
 }
+
+.section__description--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 
 
 /* 
@@ -191,15 +211,15 @@ LANDING
 
 .header__btn {
     background-color: #6415ff;
-    color: #fff;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
     width: 100%;
     max-width: 160px;
     height: calc(100% - 16px);
     margin: 8px;
-    font-size: 16px;
     font-weight: 700;
-    border: none;
-    border-radius: 50px;
     z-index: 2;
 }
 
@@ -245,10 +265,15 @@ FEATURES
     margin: 0 50px;
 }
 
+
+
 .features__section--row {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .features {
@@ -261,7 +286,7 @@ FEATURES
 .feature__row {
     display: flex;
     align-items: flex-start;
-    padding: 20px;
+    padding: 32px 24px;
 }
 
 .feature {
@@ -287,5 +312,41 @@ FEATURES
 .feature__para {
     margin-top: 16px;
     line-height: 2;
+    font-weight: 500;
     color: #7c8ba1;
+}
+
+
+/* 
+
+QUALITY
+
+*/
+
+#quality .row{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quality {
+    display: flex;
+}
+
+.quality__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+}
+
+.quality__img--wrapper {
+    width: 50%;
+    border: 1px solid rgb(229, 231, 235);
+    margin: 0 56px;
+}
+
+.quality__img {
+    width: 100%;
 }
