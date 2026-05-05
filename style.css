@@ -46,7 +46,8 @@ img {
 }
 
 .section__label {
-    margin-bottom: 16px;
+    color: #6415ff;
+    margin-bottom: 20px;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -263,6 +264,7 @@ FEATURES
 
 #features {
     margin: 0 50px;
+    padding: 0 32px;
 }
 
 
@@ -323,6 +325,11 @@ QUALITY
 
 */
 
+
+#quality {
+    padding: 0 32px;
+}
+
 #quality .row{
     text-align: left;
     display: flex;
@@ -342,6 +349,7 @@ QUALITY
 }
 
 .quality__img--wrapper {
+    display: flex;
     width: 50%;
     border: 1px solid rgb(229, 231, 235);
     margin: 0 56px;
@@ -349,4 +357,68 @@ QUALITY
 
 .quality__img {
     width: 100%;
+}
+
+
+/* 
+
+STEPS
+
+*/
+
+
+#steps {
+    padding: 0 32px;
+}
+
+#steps .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps__img--wrapper {
+    width: 50%;
+    display: flex;
+}
+
+.steps__description {
+    width: 50%;
+    padding: 32px 0;
+    padding-left: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+
+}
+
+.step__title {
+    color: #243e63;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.step__para {
+    max-width: 348px;
+    font-size: 14px;
+    margin-top: 12px;
 }
