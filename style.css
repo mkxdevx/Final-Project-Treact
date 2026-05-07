@@ -422,3 +422,103 @@ STEPS
     font-size: 14px;
     margin-top: 12px;
 }
+
+
+/* 
+
+VALUES
+
+*/
+
+
+#values {
+    padding: 0 32px;
+}
+
+#values .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#values .section__title {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.values__description {
+    width: 50%;
+    padding: 32px 0;
+    padding-right: 64px;
+}
+
+.values__img--wrapper {
+    width: 50%;
+}
+
+.values__list {
+    display: flex;
+    margin-top: 32px;
+}
+
+.value {
+    width: 50%;
+    margin-right: 16px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.value:nth-of-child(1) {
+    margin-top: 32px;
+    margin-right: 32px;
+}
+
+.value:nth-of-child(2) {
+    margin-top: 32px;
+}
+
+.value__title {
+    display: flex;
+    align-items: center;
+}
+
+.value__img {
+    width: 20px;
+    height: 20px;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+    background-color: #9ae6b4;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2;
+}
+
+.value__img--wrapper {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.value__name {
+    color: #243e63;
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.value__para {
+    color: #718096;
+    margin-top: 16px;
+    line-height: 1.5;
+}
+
+#values .btn {
+    margin-top: 48px;
+}
