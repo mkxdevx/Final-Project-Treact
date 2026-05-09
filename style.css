@@ -552,7 +552,7 @@ PRICING
 .plan {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     display: flex;
     flex-direction: column;
     margin-top: 64px;
@@ -562,6 +562,16 @@ PRICING
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.plan__top,
+.plan__middle,
+.plan__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
 }
 
 .plan__stripe {
@@ -575,14 +585,13 @@ PRICING
     border-top-right-radius: 8px;
 }
 
-.plan__top,
-.plan__middle,
+.plan__middle {
+    margin: 0 -32px;
+
+}
+
 .plan__bottom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 0;
+    padding: 32px 64px;
 }
 
 .plan__title,
@@ -612,6 +621,7 @@ PRICING
 
 .plan__price {
     font-size: 48px;
+    letter-spacing: 1.5px;
 }
 
 .plan__duration {
@@ -625,10 +635,6 @@ PRICING
 .plan__feature {
     margin-top: 20px;
     font-weight: 500;
-}
-
-.plan__bottom {
-    padding: 32px 64px;
 }
 
 .plan__button {
@@ -668,4 +674,29 @@ PRICING
     color: #a0aec0;
 }
 
+.plan:nth-child(2) .plan__stripe {
+    background: linear-gradient(135deg rgba(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan:nth-child(2) {
+    background: linear-gradient(135deg, rgba(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan:nth-child(2) .plan__title,
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__duration,
+.plan:nth-child(2) .plan__target,
+.plan:nth-child(2) .plan__feature {
+    color: #f7fafc;
+}
+
+.plan:nth-child(2) .plan__middle {
+    border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+.plan:nth-child(2) .plan__button {
+    color: #6415ff;
+    background-color: #f7fafc;
+}
 
