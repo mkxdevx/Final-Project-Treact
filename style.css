@@ -281,7 +281,7 @@ FEATURES
 
 
 
-.features__section--row {
+.features__row {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,7 +342,7 @@ QUALITY
     padding: 0 32px;
 }
 
-#quality .row{
+.quality__row {
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -383,7 +383,7 @@ STEPS
     padding: 0 32px;
 }
 
-#steps .row {
+.steps__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -447,7 +447,7 @@ VALUES
     padding: 0 32px;
 }
 
-#values .row {
+.values__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -542,6 +542,12 @@ PRICING
 
 */
 
+
+.pricing__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .plans {
     display: flex;
@@ -700,3 +706,30 @@ PRICING
     background-color: #f7fafc;
 }
 
+
+/* 
+
+TESTIMONIALS
+
+*/
+
+.testimonials__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials__description {
+    width: 60%;
+    padding-left: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials__img--wrapper {
+    width: 40%;
+}
+
+.profile__img--wrapper {
+    max-width: 50px;
+}
