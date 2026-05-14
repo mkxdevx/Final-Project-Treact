@@ -43,6 +43,11 @@ button {
     font-weight: 600;
     border-radius: 50px;
     padding: 12px 32px;
+    line-height: normal;
+}
+
+.btn:hover {
+    background-color: #5011CC;
 }
 
 .row {
@@ -60,7 +65,7 @@ button {
 
 .section__title,
 .section__para {
-    line-height: 1.65;
+    line-height: 1.5;
 }
 
 .section__label {
@@ -368,19 +373,15 @@ QUALITY
     padding-right: 100px;
 }
 
-.quality__img--wrapper {
-    display: flex;
-    width: 50%;
-    border: 1px solid rgb(229, 231, 235);
-    margin: 0 56px;
-}
-
-.quality__img {
-    width: 100%;
-}
-
 #quality .btn {
     margin-top: 32px;
+}
+
+.quality__img--wrapper {
+    width: 50%;
+    display: flex;
+    border: 1px solid rgb(229, 231, 235);
+    margin: 0 56px;
 }
 
 
@@ -468,6 +469,7 @@ VALUES
 #values .section__title {
     margin-top: 16px;
     margin-bottom: 32px;
+    line-height: 1.25;
 }
 
 .values__description {
@@ -566,6 +568,7 @@ PRICING
 }
 
 .plans {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -573,6 +576,7 @@ PRICING
 
 .plan {
     position: relative;
+    z-index: 1;
     width: 100%;
     max-width: 480px;
     display: flex;
@@ -581,6 +585,7 @@ PRICING
     margin-right: 32px;
     padding: 0 32px;
     padding-top: 8px;
+    background-color: rgb(255 255 255);
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
     rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
@@ -720,6 +725,17 @@ PRICING
 .plan:nth-child(2) .plan__button {
     color: #6415ff;
     background-color: #f7fafc;
+}
+
+.plans__blob {
+    z-index: -10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
+    height: 256px;
+    width: 256px;
+    opacity: 0.25;
 }
 
 
