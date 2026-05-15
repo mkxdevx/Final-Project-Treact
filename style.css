@@ -493,6 +493,10 @@ QUALITY
     margin: 0 56px;
 }
 
+.quality__img {
+    box-shadow: 0px 8px 20px color-mix(in srgb, #6415ff 30%, white);
+}
+
 
 /* 
 
@@ -780,6 +784,7 @@ PRICING
 .plan__feature {
     margin-top: 20px;
     font-weight: 500;
+    color: #718096;
 }
 
 .plan__button {
@@ -821,8 +826,7 @@ PRICING
     color: #1a202c;
 }
 
-.plan.plan:nth-child(odd) .plan__duration,
-.plan:nth-child(odd) .plan__feature {
+.plan.plan:nth-child(odd) .plan__duration {
     color: #a0aec0;
 }
 
@@ -1383,5 +1387,72 @@ MEDIA
     }
     .start__button {
         padding: 16px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+       justify-content: center;
+       max-width: 378px;
+    }
+    .feature {
+        width: 100%;
+    }
+    .quality__row,
+    .values__row {
+        flex-direction: column-reverse;
+    }
+    .quality__img--wrapper,
+    .quality__description,
+    .steps__img--wrapper,
+    .steps__description, 
+    .values__img--wrapper,
+    .values__description,
+    .testimonials__description,
+    .testimonials__img--wrapper {
+       width: 100%;
+       max-width: 448px;
+    }
+    .quality__description,
+    .steps__description, 
+    .values__description,
+    .testimonials__description {
+        margin: 64px 0;
+        text-align: center;
+        padding: 0;
+    }
+    .section__label,
+    .section__title {
+        text-align: center;
+    }
+    .section__para {
+        font-size: 14px;
+    }
+    .btn,
+    .value__title,
+    .values__list {
+       margin: 0 auto;
+    }
+    .steps__row,
+    .testimonials__row {
+        flex-direction: column;
+    }
+    .step {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .step__description {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+    .values__list,
+    .value__para,
+    .testimonial__para {
+        text-align: center;
+    }
+    .value {
+        width: 100%;
     }
 }
