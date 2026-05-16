@@ -270,6 +270,11 @@ MENU
     background: #6415ff;
     border-radius: 500px;
     border: none;
+    transition: all 300ms ease;
+}
+
+.menu__link--primary:hover {
+    background-color: #5011CC;
 }
 
 .btn__menu--close {
@@ -353,8 +358,7 @@ LANDING
     font-size: 16px;
     border: none;
     border-radius: 50px;
-    width: 100%;
-    max-width: 160px;
+    width: 160px;
     height: calc(100% - 16px);
     margin: 8px;
     font-weight: 700;
@@ -964,12 +968,17 @@ TESTIMONIALS
 
 .testimonial__profile--button {
     width: 50px;
+    background-color: #edf2f7;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 12px;
     padding: 16px;
     border-radius: 50%;
+    transition: all 300ms ease;
+}
+.testimonial__profile--button:hover {
+    background-color: rgb(229, 231, 235);
 }
 
 .divider {
@@ -1428,10 +1437,15 @@ MEDIA
     .section__para {
         font-size: 14px;
     }
-    .btn,
+    #quality .btn,
     .value__title,
     .values__list {
        margin: 0 auto;
+    }
+    #quality .btn,
+    .footer__copyright,
+    .footer__socials {
+        margin-top: 32px;
     }
     .steps__row,
     .testimonials__row {
@@ -1454,5 +1468,137 @@ MEDIA
     }
     .value {
         width: 100%;
+    }
+    .start__button {
+        z-index: 2;
+    }
+    .footer__columns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .footer__column {
+        width: calc(100% / 3);
+    }
+    .footer__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 80px 0;
+    }
+    .section__title {
+        font-size: 30px;
+    }
+    #features .section__title,
+    #pricing .section__title {
+        font-size: 36px;
+    }
+    .header__email {
+        flex-direction: column;
+        height: auto;
+    }
+    .header__email--input,
+    .header__btn {
+       line-height: 1.25;
+    }
+    .header__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+    }
+    .header__btn {
+        width: 100%;
+        margin: 16px 0;
+        margin-bottom: 16px;
+        padding: 16px 0;
+        margin-bottom: 0;
+    }
+    .header__customers--title {
+        font-size: 14px;
+    }
+    .feature__row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .feature__img--wrapper {
+        margin: 0 auto;
+    }
+    .feature__description {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+    .feature__para {
+        margin-top: 4px;
+    }
+    .plan__price {
+        font-size: 36px;
+    }
+    .plan__bottom {
+        padding: 32px 24px;
+    }
+    .testimonial__profile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .testimonial__profile--info {
+        flex-direction: column;
+    }
+    .testimonial__profile--details {
+        margin: 0;
+    }
+    .testimonial__profile--role {
+        font-size: 14px;
+    }
+    .testimonial__profile--buttons {
+        margin-top: 32px;
+    }
+    .start__title {
+        font-size: 24px;
+    }
+    .start__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .start__button {
+        padding: 12px 24px;
+        font-size: 14px;
+        z-index: 2;
+    }
+    .start__button:nth-child(1) {
+        margin-right: 0;
+    }
+    .start__button:nth-child(2) {
+        margin-top: 16px;
+    }
+    .footer__columns {
+        justify-content: center;
+    }
+    .footer__column {
+        width: auto;
+        text-align: center;
+        align-items: center;
+        padding: 0 16px;
+    }
+    .footer__column--link {
+        margin: 0 auto;
+        margin-top: 12px;
+    }
+    footer {
+        padding: 80px 32px;
+    }
+    .footer__copyright {
+        font-size: 14px;
+    }
+    main {
+        margin-bottom: 80px;
     }
 }
